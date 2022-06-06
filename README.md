@@ -3,6 +3,8 @@
 
 ![target_align](git_target_line.jpg)
 ![peace_Sign](git_peace_activate.gif)
+![squared_up](git_square.jpg)
+
 
 Golfers often struggle with consistant alignment at setup. For putting, it's generally accepted that we want our shoulders square to the target line, and our eyes directly over the ball. This app is used with the device on the ground, facing up at the user. Once calibrated to the ideal position, it shows both an eye line and a shoulder line to help a player confirm they are setup corretly.
 
