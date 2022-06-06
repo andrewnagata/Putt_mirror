@@ -1,0 +1,580 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D4BB83F249769C800076D64 /* PoseNetMobileNet075S16FP16.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0D4BB83E249769C800076D64 /* PoseNetMobileNet075S16FP16.mlmodel */; };
+		0DCEF2C7241666CA00ECEC99 /* PoseBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCEF2C6241666CA00ECEC99 /* PoseBuilder.swift */; };
+		0DCEF2C92416701D00ECEC99 /* PoseBuilder+Single.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCEF2C82416701D00ECEC99 /* PoseBuilder+Single.swift */; };
+		0DCEF2CB2416709B00ECEC99 /* PoseBuilder+Multiple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCEF2CA2416709B00ECEC99 /* PoseBuilder+Multiple.swift */; };
+		0DCEF2CE241676C000ECEC99 /* PoseBuilderConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCEF2CD241676C000ECEC99 /* PoseBuilderConfiguration.swift */; };
+		492E243126BB3B5D0037610C /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492E243026BB3B5D0037610C /* Model.swift */; };
+		49562D63277B8CC9001FEA8A /* Exo-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 49562D51277B8CC8001FEA8A /* Exo-Medium.ttf */; };
+		49562D64277B8CC9001FEA8A /* Exo-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 49562D52277B8CC8001FEA8A /* Exo-ExtraBoldItalic.ttf */; };
+		49562D65277B8CC9001FEA8A /* Exo-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 49562D53277B8CC8001FEA8A /* Exo-MediumItalic.ttf */; };
+		49562D66277B8CC9001FEA8A /* Exo-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 49562D54277B8CC8001FEA8A /* Exo-ExtraBold.ttf */; };
+		49562D67277B8CC9001FEA8A /* Exo-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 49562D55277B8CC8001FEA8A /* Exo-Black.ttf */; };
+		49562D68277B8CC9001FEA8A /* Exo-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 49562D56277B8CC9001FEA8A /* Exo-SemiBold.ttf */; };
+		49562D69277B8CC9001FEA8A /* Exo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 49562D57277B8CC9001FEA8A /* Exo-Bold.ttf */; };
+		49562D6A277B8CC9001FEA8A /* Exo-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 49562D58277B8CC9001FEA8A /* Exo-SemiBoldItalic.ttf */; };
+		49562D6B277B8CC9001FEA8A /* Exo-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 49562D59277B8CC9001FEA8A /* Exo-Thin.ttf */; };
+		49562D6C277B8CC9001FEA8A /* Exo-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 49562D5A277B8CC9001FEA8A /* Exo-LightItalic.ttf */; };
+		49562D6D277B8CC9001FEA8A /* Exo-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 49562D5B277B8CC9001FEA8A /* Exo-Italic.ttf */; };
+		49562D6E277B8CC9001FEA8A /* Exo-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 49562D5C277B8CC9001FEA8A /* Exo-ExtraLightItalic.ttf */; };
+		49562D6F277B8CC9001FEA8A /* Exo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 49562D5D277B8CC9001FEA8A /* Exo-Regular.ttf */; };
+		49562D70277B8CC9001FEA8A /* Exo-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 49562D5E277B8CC9001FEA8A /* Exo-ExtraLight.ttf */; };
+		49562D71277B8CC9001FEA8A /* Exo-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 49562D5F277B8CC9001FEA8A /* Exo-BoldItalic.ttf */; };
+		49562D72277B8CC9001FEA8A /* Exo-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 49562D60277B8CC9001FEA8A /* Exo-Light.ttf */; };
+		49562D73277B8CC9001FEA8A /* Exo-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 49562D61277B8CC9001FEA8A /* Exo-ThinItalic.ttf */; };
+		49562D74277B8CC9001FEA8A /* Exo-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 49562D62277B8CC9001FEA8A /* Exo-BlackItalic.ttf */; };
+		49562D78277B9D0A001FEA8A /* confirm_peace.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 49562D77277B9D0A001FEA8A /* confirm_peace.mp3 */; };
+		49562D7A277D19EE001FEA8A /* DashedLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49562D79277D19EE001FEA8A /* DashedLineView.swift */; };
+		4983F90A277A5CD00061E8E8 /* svg in Resources */ = {isa = PBXBuildFile; fileRef = 4983F909277A5CD00061E8E8 /* svg */; };
+		4983F90C277A5D3A0061E8E8 /* TargetAlignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4983F90B277A5D3A0061E8E8 /* TargetAlignViewController.swift */; };
+		4983F90E277A5D510061E8E8 /* EyelineSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4983F90D277A5D510061E8E8 /* EyelineSetupViewController.swift */; };
+		4983F910277A5D5F0061E8E8 /* PuttingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4983F90F277A5D5F0061E8E8 /* PuttingViewController.swift */; };
+		49882C5926B874E100C2658F /* PuttAlignmentClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 49882C5826B874E100C2658F /* PuttAlignmentClassifier.mlmodel */; };
+		49D1D853277D2CB9000FFD53 /* TripleDashedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D1D852277D2CB9000FFD53 /* TripleDashedView.swift */; };
+		49D1D855277DA661000FFD53 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D1D854277DA661000FFD53 /* SoundManager.swift */; };
+		4A0FC5BC23190AD6004886B9 /* CGPoint+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0FC5BB23190AD6004886B9 /* CGPoint+Extension.swift */; };
+		4A2D23B222BB70E400494C55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2D23B122BB70E400494C55 /* AppDelegate.swift */; };
+		4A2D23B922BB70E400494C55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A2D23B722BB70E400494C55 /* Main.storyboard */; };
+		4A2D23BB22BB70E500494C55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A2D23BA22BB70E500494C55 /* Assets.xcassets */; };
+		4A2D23BE22BB70E500494C55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A2D23BC22BB70E500494C55 /* LaunchScreen.storyboard */; };
+		4A97FA952350ABDE00255C7F /* Pose.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A97FA942350ABDE00255C7F /* Pose.swift */; };
+		4AA5C4B822BB9CC200277977 /* VideoCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA5C4B722BB9CC200277977 /* VideoCapture.swift */; };
+		4AA5C4BA22BBBC2A00277977 /* PoseNet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA5C4B922BBBC2A00277977 /* PoseNet.swift */; };
+		4ADD52F822BBCF580008FAAC /* Joint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADD52F722BBCF580008FAAC /* Joint.swift */; };
+		4ADE4C8C2346C07300FFD895 /* AVCaptureVideoOrientation+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADE4C8B2346C07300FFD895 /* AVCaptureVideoOrientation+Extension.swift */; };
+		4AE8C3CB23ACDF1C005F9953 /* PoseImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE8C3CA23ACDF1C005F9953 /* PoseImageView.swift */; };
+		4AE8C3CF23AD2A74005F9953 /* CGImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE8C3CE23AD2A74005F9953 /* CGImage+Extension.swift */; };
+		4AE8C3D123AD2D3B005F9953 /* PoseNetInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE8C3D023AD2D3B005F9953 /* PoseNetInput.swift */; };
+		4AE8C3D323AD2D8A005F9953 /* PoseNetOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE8C3D223AD2D8A005F9953 /* PoseNetOutput.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0D4BB83E249769C800076D64 /* PoseNetMobileNet075S16FP16.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = PoseNetMobileNet075S16FP16.mlmodel; sourceTree = "<group>"; };
+		0DCEF2C6241666CA00ECEC99 /* PoseBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseBuilder.swift; sourceTree = "<group>"; };
+		0DCEF2C82416701D00ECEC99 /* PoseBuilder+Single.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PoseBuilder+Single.swift"; sourceTree = "<group>"; };
+		0DCEF2CA2416709B00ECEC99 /* PoseBuilder+Multiple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PoseBuilder+Multiple.swift"; sourceTree = "<group>"; };
+		0DCEF2CD241676C000ECEC99 /* PoseBuilderConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseBuilderConfiguration.swift; sourceTree = "<group>"; };
+		492E243026BB3B5D0037610C /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		49562D51277B8CC8001FEA8A /* Exo-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Exo-Medium.ttf"; path = "fonts/Exo-Medium.ttf"; sourceTree = "<group>"; };
+		49562D52277B8CC8001FEA8A /* Exo-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Exo-ExtraBoldItalic.ttf"; path = "fonts/Exo-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		49562D53277B8CC8001FEA8A /* Exo-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Exo-MediumItalic.ttf"; path = "fonts/Exo-MediumItalic.ttf"; sourceTree = "<group>"; };
+		49562D54277B8CC8001FEA8A /* Exo-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Exo-ExtraBold.ttf"; path = "fonts/Exo-ExtraBold.ttf"; sourceTree = "<group>"; };
+		49562D55277B8CC8001FEA8A /* Exo-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Exo-Black.ttf"; path = "fonts/Exo-Black.ttf"; sourceTree = "<group>"; };
+		49562D56277B8CC9001FEA8A /* Exo-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Exo-SemiBold.ttf"; path = "fonts/Exo-SemiBold.ttf"; sourceTree = "<group>"; };
+		49562D57277B8CC9001FEA8A /* Exo-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Exo-Bold.ttf"; path = "fonts/Exo-Bold.ttf"; sourceTree = "<group>"; };
+		49562D58277B8CC9001FEA8A /* Exo-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Exo-SemiBoldItalic.ttf"; path = "fonts/Exo-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		49562D59277B8CC9001FEA8A /* Exo-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Exo-Thin.ttf"; path = "fonts/Exo-Thin.ttf"; sourceTree = "<group>"; };
+		49562D5A277B8CC9001FEA8A /* Exo-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Exo-LightItalic.ttf"; path = "fonts/Exo-LightItalic.ttf"; sourceTree = "<group>"; };
+		49562D5B277B8CC9001FEA8A /* Exo-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Exo-Italic.ttf"; path = "fonts/Exo-Italic.ttf"; sourceTree = "<group>"; };
+		49562D5C277B8CC9001FEA8A /* Exo-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Exo-ExtraLightItalic.ttf"; path = "fonts/Exo-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		49562D5D277B8CC9001FEA8A /* Exo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Exo-Regular.ttf"; path = "fonts/Exo-Regular.ttf"; sourceTree = "<group>"; };
+		49562D5E277B8CC9001FEA8A /* Exo-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Exo-ExtraLight.ttf"; path = "fonts/Exo-ExtraLight.ttf"; sourceTree = "<group>"; };
+		49562D5F277B8CC9001FEA8A /* Exo-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Exo-BoldItalic.ttf"; path = "fonts/Exo-BoldItalic.ttf"; sourceTree = "<group>"; };
+		49562D60277B8CC9001FEA8A /* Exo-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Exo-Light.ttf"; path = "fonts/Exo-Light.ttf"; sourceTree = "<group>"; };
+		49562D61277B8CC9001FEA8A /* Exo-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Exo-ThinItalic.ttf"; path = "fonts/Exo-ThinItalic.ttf"; sourceTree = "<group>"; };
+		49562D62277B8CC9001FEA8A /* Exo-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Exo-BlackItalic.ttf"; path = "fonts/Exo-BlackItalic.ttf"; sourceTree = "<group>"; };
+		49562D77277B9D0A001FEA8A /* confirm_peace.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = confirm_peace.mp3; sourceTree = "<group>"; };
+		49562D79277D19EE001FEA8A /* DashedLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashedLineView.swift; sourceTree = "<group>"; };
+		4983F909277A5CD00061E8E8 /* svg */ = {isa = PBXFileReference; lastKnownFileType = folder; path = svg; sourceTree = "<group>"; };
+		4983F90B277A5D3A0061E8E8 /* TargetAlignViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetAlignViewController.swift; sourceTree = "<group>"; };
+		4983F90D277A5D510061E8E8 /* EyelineSetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyelineSetupViewController.swift; sourceTree = "<group>"; };
+		4983F90F277A5D5F0061E8E8 /* PuttingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuttingViewController.swift; sourceTree = "<group>"; };
+		49882C5826B874E100C2658F /* PuttAlignmentClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = PuttAlignmentClassifier.mlmodel; sourceTree = "<group>"; };
+		49D1D852277D2CB9000FFD53 /* TripleDashedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripleDashedView.swift; sourceTree = "<group>"; };
+		49D1D854277DA661000FFD53 /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
+		4A0FC5BB23190AD6004886B9 /* CGPoint+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPoint+Extension.swift"; sourceTree = "<group>"; };
+		4A2D23AE22BB70E400494C55 /* PuttAlign.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PuttAlign.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A2D23B122BB70E400494C55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4A2D23B822BB70E400494C55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4A2D23BA22BB70E500494C55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4A2D23BD22BB70E500494C55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4A2D23BF22BB70E500494C55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A97FA942350ABDE00255C7F /* Pose.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pose.swift; sourceTree = "<group>"; };
+		4AA5C4B722BB9CC200277977 /* VideoCapture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCapture.swift; sourceTree = "<group>"; };
+		4AA5C4B922BBBC2A00277977 /* PoseNet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseNet.swift; sourceTree = "<group>"; };
+		4ADD52F722BBCF580008FAAC /* Joint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Joint.swift; sourceTree = "<group>"; };
+		4ADE4C8B2346C07300FFD895 /* AVCaptureVideoOrientation+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AVCaptureVideoOrientation+Extension.swift"; sourceTree = "<group>"; };
+		4AE8C3CA23ACDF1C005F9953 /* PoseImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseImageView.swift; sourceTree = "<group>"; };
+		4AE8C3CE23AD2A74005F9953 /* CGImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGImage+Extension.swift"; sourceTree = "<group>"; };
+		4AE8C3D023AD2D3B005F9953 /* PoseNetInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseNetInput.swift; sourceTree = "<group>"; };
+		4AE8C3D223AD2D8A005F9953 /* PoseNetOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseNetOutput.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4A2D23AB22BB70E400494C55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0DCEF2CC241675C200ECEC99 /* Pose */ = {
+			isa = PBXGroup;
+			children = (
+				0DCEF2CD241676C000ECEC99 /* PoseBuilderConfiguration.swift */,
+				0DCEF2C6241666CA00ECEC99 /* PoseBuilder.swift */,
+				0DCEF2C82416701D00ECEC99 /* PoseBuilder+Single.swift */,
+				0DCEF2CA2416709B00ECEC99 /* PoseBuilder+Multiple.swift */,
+				4A97FA942350ABDE00255C7F /* Pose.swift */,
+				4ADD52F722BBCF580008FAAC /* Joint.swift */,
+			);
+			path = Pose;
+			sourceTree = "<group>";
+		};
+		1E2F76EA3781C8213469E3A0 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+		49562D4E277B8B10001FEA8A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				49562D77277B9D0A001FEA8A /* confirm_peace.mp3 */,
+				49562D55277B8CC8001FEA8A /* Exo-Black.ttf */,
+				49562D62277B8CC9001FEA8A /* Exo-BlackItalic.ttf */,
+				49562D57277B8CC9001FEA8A /* Exo-Bold.ttf */,
+				49562D5F277B8CC9001FEA8A /* Exo-BoldItalic.ttf */,
+				49562D54277B8CC8001FEA8A /* Exo-ExtraBold.ttf */,
+				49562D52277B8CC8001FEA8A /* Exo-ExtraBoldItalic.ttf */,
+				49562D5E277B8CC9001FEA8A /* Exo-ExtraLight.ttf */,
+				49562D5C277B8CC9001FEA8A /* Exo-ExtraLightItalic.ttf */,
+				49562D5B277B8CC9001FEA8A /* Exo-Italic.ttf */,
+				49562D60277B8CC9001FEA8A /* Exo-Light.ttf */,
+				49562D5A277B8CC9001FEA8A /* Exo-LightItalic.ttf */,
+				49562D51277B8CC8001FEA8A /* Exo-Medium.ttf */,
+				49562D53277B8CC8001FEA8A /* Exo-MediumItalic.ttf */,
+				49562D5D277B8CC9001FEA8A /* Exo-Regular.ttf */,
+				49562D56277B8CC9001FEA8A /* Exo-SemiBold.ttf */,
+				49562D58277B8CC9001FEA8A /* Exo-SemiBoldItalic.ttf */,
+				49562D59277B8CC9001FEA8A /* Exo-Thin.ttf */,
+				49562D61277B8CC9001FEA8A /* Exo-ThinItalic.ttf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4A2D23A522BB70E400494C55 = {
+			isa = PBXGroup;
+			children = (
+				4A2D23B022BB70E400494C55 /* PuttAlign */,
+				4A2D23AF22BB70E400494C55 /* Products */,
+				1E2F76EA3781C8213469E3A0 /* Configuration */,
+			);
+			sourceTree = "<group>";
+		};
+		4A2D23AF22BB70E400494C55 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4A2D23AE22BB70E400494C55 /* PuttAlign.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4A2D23B022BB70E400494C55 /* PuttAlign */ = {
+			isa = PBXGroup;
+			children = (
+				0DCEF2CC241675C200ECEC99 /* Pose */,
+				6594E51B23454C4100D3C44D /* Model */,
+				4AFBF15322CC9A1900A4B11A /* Extensions+Types */,
+				4AFBF15222CC9A1300A4B11A /* Utils */,
+				6594E51A23454A2300D3C44D /* UI */,
+				49562D4E277B8B10001FEA8A /* Resources */,
+				6594E5192345489C00D3C44D /* App */,
+			);
+			path = PuttAlign;
+			sourceTree = "<group>";
+		};
+		4AFBF15222CC9A1300A4B11A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4AA5C4B722BB9CC200277977 /* VideoCapture.swift */,
+				4ADE4C8B2346C07300FFD895 /* AVCaptureVideoOrientation+Extension.swift */,
+				492E243026BB3B5D0037610C /* Model.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		4AFBF15322CC9A1900A4B11A /* Extensions+Types */ = {
+			isa = PBXGroup;
+			children = (
+				4A0FC5BB23190AD6004886B9 /* CGPoint+Extension.swift */,
+				4AE8C3CE23AD2A74005F9953 /* CGImage+Extension.swift */,
+			);
+			path = "Extensions+Types";
+			sourceTree = "<group>";
+		};
+		6594E5192345489C00D3C44D /* App */ = {
+			isa = PBXGroup;
+			children = (
+				4A2D23B122BB70E400494C55 /* AppDelegate.swift */,
+				4A2D23BF22BB70E500494C55 /* Info.plist */,
+				4A2D23B722BB70E400494C55 /* Main.storyboard */,
+				4A2D23BC22BB70E500494C55 /* LaunchScreen.storyboard */,
+				4A2D23BA22BB70E500494C55 /* Assets.xcassets */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		6594E51A23454A2300D3C44D /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				4983F909277A5CD00061E8E8 /* svg */,
+				4AE8C3CA23ACDF1C005F9953 /* PoseImageView.swift */,
+				4983F90B277A5D3A0061E8E8 /* TargetAlignViewController.swift */,
+				4983F90D277A5D510061E8E8 /* EyelineSetupViewController.swift */,
+				4983F90F277A5D5F0061E8E8 /* PuttingViewController.swift */,
+				49562D79277D19EE001FEA8A /* DashedLineView.swift */,
+				49D1D852277D2CB9000FFD53 /* TripleDashedView.swift */,
+				49D1D854277DA661000FFD53 /* SoundManager.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		6594E51B23454C4100D3C44D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				49882C5826B874E100C2658F /* PuttAlignmentClassifier.mlmodel */,
+				0D4BB83E249769C800076D64 /* PoseNetMobileNet075S16FP16.mlmodel */,
+				4AE8C3D023AD2D3B005F9953 /* PoseNetInput.swift */,
+				4AE8C3D223AD2D8A005F9953 /* PoseNetOutput.swift */,
+				4AA5C4B922BBBC2A00277977 /* PoseNet.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4A2D23AD22BB70E400494C55 /* PuttAlign */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A2D23C222BB70E500494C55 /* Build configuration list for PBXNativeTarget "PuttAlign" */;
+			buildPhases = (
+				4A2D23AA22BB70E400494C55 /* Sources */,
+				4A2D23AB22BB70E400494C55 /* Frameworks */,
+				4A2D23AC22BB70E400494C55 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PuttAlign;
+			productName = PoseFinder;
+			productReference = 4A2D23AE22BB70E400494C55 /* PuttAlign.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4A2D23A622BB70E400494C55 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				DefaultBuildSystemTypeForWorkspace = Latest;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1200;
+				ORGANIZATIONNAME = Apple;
+				TargetAttributes = {
+					4A2D23AD22BB70E400494C55 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+				};
+			};
+			buildConfigurationList = 4A2D23A922BB70E400494C55 /* Build configuration list for PBXProject "PuttAlignment" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4A2D23A522BB70E400494C55;
+			productRefGroup = 4A2D23AF22BB70E400494C55 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4A2D23AD22BB70E400494C55 /* PuttAlign */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4A2D23AC22BB70E400494C55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49562D6B277B8CC9001FEA8A /* Exo-Thin.ttf in Resources */,
+				49562D71277B8CC9001FEA8A /* Exo-BoldItalic.ttf in Resources */,
+				49562D65277B8CC9001FEA8A /* Exo-MediumItalic.ttf in Resources */,
+				49562D63277B8CC9001FEA8A /* Exo-Medium.ttf in Resources */,
+				4A2D23BE22BB70E500494C55 /* LaunchScreen.storyboard in Resources */,
+				49562D66277B8CC9001FEA8A /* Exo-ExtraBold.ttf in Resources */,
+				49562D78277B9D0A001FEA8A /* confirm_peace.mp3 in Resources */,
+				49562D70277B8CC9001FEA8A /* Exo-ExtraLight.ttf in Resources */,
+				49562D6A277B8CC9001FEA8A /* Exo-SemiBoldItalic.ttf in Resources */,
+				49562D6F277B8CC9001FEA8A /* Exo-Regular.ttf in Resources */,
+				4A2D23BB22BB70E500494C55 /* Assets.xcassets in Resources */,
+				49562D64277B8CC9001FEA8A /* Exo-ExtraBoldItalic.ttf in Resources */,
+				4A2D23B922BB70E400494C55 /* Main.storyboard in Resources */,
+				49562D67277B8CC9001FEA8A /* Exo-Black.ttf in Resources */,
+				49562D6D277B8CC9001FEA8A /* Exo-Italic.ttf in Resources */,
+				49562D6C277B8CC9001FEA8A /* Exo-LightItalic.ttf in Resources */,
+				49562D68277B8CC9001FEA8A /* Exo-SemiBold.ttf in Resources */,
+				49562D69277B8CC9001FEA8A /* Exo-Bold.ttf in Resources */,
+				4983F90A277A5CD00061E8E8 /* svg in Resources */,
+				49562D72277B8CC9001FEA8A /* Exo-Light.ttf in Resources */,
+				49562D73277B8CC9001FEA8A /* Exo-ThinItalic.ttf in Resources */,
+				49562D6E277B8CC9001FEA8A /* Exo-ExtraLightItalic.ttf in Resources */,
+				49562D74277B8CC9001FEA8A /* Exo-BlackItalic.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4A2D23AA22BB70E400494C55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DCEF2C92416701D00ECEC99 /* PoseBuilder+Single.swift in Sources */,
+				0DCEF2CB2416709B00ECEC99 /* PoseBuilder+Multiple.swift in Sources */,
+				0DCEF2C7241666CA00ECEC99 /* PoseBuilder.swift in Sources */,
+				49882C5926B874E100C2658F /* PuttAlignmentClassifier.mlmodel in Sources */,
+				49D1D855277DA661000FFD53 /* SoundManager.swift in Sources */,
+				4AA5C4B822BB9CC200277977 /* VideoCapture.swift in Sources */,
+				4AE8C3CF23AD2A74005F9953 /* CGImage+Extension.swift in Sources */,
+				4A0FC5BC23190AD6004886B9 /* CGPoint+Extension.swift in Sources */,
+				4983F90C277A5D3A0061E8E8 /* TargetAlignViewController.swift in Sources */,
+				4A97FA952350ABDE00255C7F /* Pose.swift in Sources */,
+				4983F90E277A5D510061E8E8 /* EyelineSetupViewController.swift in Sources */,
+				49D1D853277D2CB9000FFD53 /* TripleDashedView.swift in Sources */,
+				4AE8C3D123AD2D3B005F9953 /* PoseNetInput.swift in Sources */,
+				4AA5C4BA22BBBC2A00277977 /* PoseNet.swift in Sources */,
+				4AE8C3D323AD2D8A005F9953 /* PoseNetOutput.swift in Sources */,
+				0DCEF2CE241676C000ECEC99 /* PoseBuilderConfiguration.swift in Sources */,
+				4ADD52F822BBCF580008FAAC /* Joint.swift in Sources */,
+				4ADE4C8C2346C07300FFD895 /* AVCaptureVideoOrientation+Extension.swift in Sources */,
+				4AE8C3CB23ACDF1C005F9953 /* PoseImageView.swift in Sources */,
+				49562D7A277D19EE001FEA8A /* DashedLineView.swift in Sources */,
+				492E243126BB3B5D0037610C /* Model.swift in Sources */,
+				0D4BB83F249769C800076D64 /* PoseNetMobileNet075S16FP16.mlmodel in Sources */,
+				4983F910277A5D5F0061E8E8 /* PuttingViewController.swift in Sources */,
+				4A2D23B222BB70E400494C55 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4A2D23B722BB70E400494C55 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4A2D23B822BB70E400494C55 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4A2D23BC22BB70E500494C55 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4A2D23BD22BB70E500494C55 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4A2D23C022BB70E500494C55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4A2D23C122BB70E500494C55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4A2D23C322BB70E500494C55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = PuttAlign/Resources/fonts;
+				DEVELOPMENT_TEAM = HZ6CB93UBT;
+				INFOPLIST_FILE = "$(SRCROOT)/PuttAlign/App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rollyk.puttalign;
+				PRODUCT_NAME = PuttAlign;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4A2D23C422BB70E500494C55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = PuttAlign/Resources/fonts;
+				DEVELOPMENT_TEAM = HZ6CB93UBT;
+				INFOPLIST_FILE = "$(SRCROOT)/PuttAlign/App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rollyk.puttalign;
+				PRODUCT_NAME = PuttAlign;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4A2D23A922BB70E400494C55 /* Build configuration list for PBXProject "PuttAlignment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A2D23C022BB70E500494C55 /* Debug */,
+				4A2D23C122BB70E500494C55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A2D23C222BB70E500494C55 /* Build configuration list for PBXNativeTarget "PuttAlign" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A2D23C322BB70E500494C55 /* Debug */,
+				4A2D23C422BB70E500494C55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4A2D23A622BB70E400494C55 /* Project object */;
+}

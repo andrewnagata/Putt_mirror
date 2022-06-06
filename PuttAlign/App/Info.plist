@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleDisplayName</key>
+	<string>PuttAlign</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>This app uses the camera to capture input for the PoseNet model </string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Exo-ExtraLight.ttf</string>
+		<string>Exo-Black.ttf</string>
+		<string>Exo-BlackItalic.ttf</string>
+		<string>Exo-Bold.ttf</string>
+		<string>Exo-BoldItalic.ttf</string>
+		<string>Exo-ExtraBold.ttf</string>
+		<string>Exo-ExtraBoldItalic.ttf</string>
+		<string>Exo-Italic.ttf</string>
+		<string>Exo-Light.ttf</string>
+		<string>Exo-LightItalic.ttf</string>
+		<string>Exo-Medium.ttf</string>
+		<string>Exo-MediumItalic.ttf</string>
+		<string>Exo-Regular.ttf</string>
+		<string>Exo-SemiBold.ttf</string>
+		<string>Exo-SemiBoldItalic.ttf</string>
+		<string>Exo-Thin.ttf</string>
+		<string>Exo-ThinItalic.ttf</string>
+	</array>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
+	<key>UIMainStoryboardFile</key>
+	<string>Main</string>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>armv7</string>
+	</array>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+		<string>UIInterfaceOrientationPortrait</string>
+	</array>
+</dict>
+</plist>
